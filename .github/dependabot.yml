@@ -1,0 +1,16 @@
+# Suggests library updates once a month, as pull requests. An agent checks each one before it's
+# merged: the licence check and every test must pass (docs/VERSION_CONTROL.md).
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 2
+    groups:
+      libraries:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

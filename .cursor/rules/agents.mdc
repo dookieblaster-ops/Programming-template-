@@ -1,0 +1,6 @@
+---
+description: Project rules for every agent (kept in AGENTS.md)
+alwaysApply: true
+---
+
+Follow the instructions in AGENTS.md at the root of this repository. Start by reading COMS.md.
