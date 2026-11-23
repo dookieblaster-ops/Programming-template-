@@ -19,3 +19,12 @@ Every library the app uses or is built with, and its licence (decision 3 in `COM
 | Vitest | Logic tests | MIT | Test only |
 | Playwright | Whole-app tests and screenshots at phone and tablet size | Apache 2.0 | Test only |
 | @types/node | Type information for the build scripts | MIT | Build only |
+
+## Versions held back
+
+| Library | Held at | Why |
+|---|---|---|
+| Vite | 7 | Vite 8 brings in Lightning CSS, which is MPL 2.0 (not on the allowed list). Moving up needs the owner's decision. |
+| @types/node | 22 | Matches the Node version in `.nvmrc`. Move both together. |
+
+These are also listed under `ignore` in [`.github/dependabot.yml`](../.github/dependabot.yml), so Dependabot doesn't suggest them.
