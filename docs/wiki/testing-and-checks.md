@@ -25,7 +25,7 @@ If Playwright can't download its own browser (some cloud workspaces), use an ins
 
 ## On GitHub
 
-The **Checks** workflow (`.github/workflows/check.yml`) runs `npm run check` on every push and pull request, and keeps the screenshots for two weeks. A red ✗ on GitHub means something's broken. Dependabot (`.github/dependabot.yml`) suggests library updates monthly; each must pass the same checks.
+The **Checks** workflow (`.github/workflows/check.yml`) runs `npm run check` on every push to main and every pull request, and keeps the screenshots for two weeks. A red ✗ on GitHub means something's broken. Dependabot (`.github/dependabot.yml`) suggests library updates monthly; each must pass the same checks.
 
 ## Other scripts
 

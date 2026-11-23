@@ -14,7 +14,7 @@ How the app's work is saved, backed up and undone (decision 5 in `COMS.md`). Wri
 | When | What | Why |
 |---|---|---|
 | After each finished step | `npm run check` passes, then a commit with a clear message, a tag (`step-N`), and a push | Every step is saved, checked and backed up |
-| On every push | GitHub runs the same checks (the "Checks" workflow) | A second pair of eyes; a red ✗ on GitHub means something's broken |
+| On every push to main | GitHub runs the same checks (the "Checks" workflow) | A second pair of eyes; a red ✗ on GitHub means something's broken |
 | Before anything risky | A branch (`try/<name>`), merged only after your go | Experiments can be thrown away without touching the main line |
 | At wrap-up | `npm run backup`, if your computer is connected | A full copy outside GitHub |
 | Never, without your agreement | Force-pushing, rewriting history, deleting branches or tags | These can lose work for good |
